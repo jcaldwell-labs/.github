@@ -1,162 +1,147 @@
 # JCaldwell Labs
 
-> Experimental developer tools, terminal applications, and context-aware development utilities
+> Making knowledge work visible and persistent in terminal environments
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-## Mission
+## Vision
 
-Building practical tools that enhance developer productivity and explore the intersection of terminal UIs, context-aware development, and AI-assisted workflows. We focus on:
+The terminal is where developers live. We build tools that make work **visible** and **persistent** there:
 
-- **Terminal-first experiences** - Rich, interactive applications that leverage modern terminal capabilities
-- **Context awareness** - Tools that understand and adapt to development workflows
-- **Developer productivity** - Utilities that streamline common tasks and reduce friction
-- **Experimental prototypes** - Exploring new ideas at the intersection of classic computing and modern AI
+- **Visible**: See multiple streams of information at once, understand context at a glance
+- **Persistent**: Don't lose what you learned, where you were, or why you made decisions
 
-## Projects
+Our tools work *with* the grain of how work actually happens, not requiring ceremony to use.
 
-### Developer Tools & Utilities
+---
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [my-context](https://github.com/jcaldwell-labs/my-context) | Context management and agent journaling for AI-assisted development workflows | ![Active](https://img.shields.io/badge/status-active-success) |
-| [capability-catalog](https://github.com/jcaldwell-labs/capability-catalog) | Schema framework for documenting and discovering agent capabilities | ![Active](https://img.shields.io/badge/status-active-success) |
-| [fintrack](https://github.com/jcaldwell-labs/fintrack) | Financial tracking and analysis tool | ![Active](https://img.shields.io/badge/status-active-success) |
+## Core Platform
 
-### Terminal Applications
+Our strategic focus - these tools are designed to work together:
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [my-grid](https://github.com/jcaldwell-labs/my-grid) | Vim-inspired terminal grid editor with visual selection, registers, and PTY zones | ![Active](https://img.shields.io/badge/status-active-success) |
-| [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | Interactive terminal canvas with pan and zoom - like Miro for the terminal | ![Active](https://img.shields.io/badge/status-active-success) |
-| [terminal-stars](https://github.com/jcaldwell-labs/terminal-stars) | Starfield visualization with frame buffering and motion effects | ![Active](https://img.shields.io/badge/status-active-success) |
-| [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | Claude Code-inspired terminal UI with scrolling output, context awareness, and status bar | ![Prototype](https://img.shields.io/badge/status-prototype-yellow) |
+| [my-context](https://github.com/jcaldwell-labs/my-context) | Context tracking for development sessions. Answer "what did I do and why?" | ![Production](https://img.shields.io/badge/status-production-blue) |
+| [my-grid](https://github.com/jcaldwell-labs/my-grid) | Terminal workspace with zones (PTY, WATCH, PIPE). See multiple things at once. | ![Active](https://img.shields.io/badge/status-active-success) |
+| [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | cc-bash: Claude Code-style TUI for bash with three-region layout | ![Prototype](https://img.shields.io/badge/status-prototype-yellow) |
 
-### Games & Interactive Experiences
+### The Synergy
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [tario](https://github.com/jcaldwell-labs/tario) | ASCII side-scrolling platformer game in C using ANSI escape codes | ![Active](https://img.shields.io/badge/status-active-success) |
-| [adventure-engine-v2](https://github.com/jcaldwell-labs/adventure-engine-v2) | Text-based adventure game engine built in C with smart terminal UI | ![Active](https://img.shields.io/badge/status-active-success) |
-| [atari-style](https://github.com/jcaldwell-labs/atari-style) | Terminal-based interactive demos with shader effects, Lissajous curves, and retro aesthetics | ![Active](https://img.shields.io/badge/status-active-success) |
+```
+my-context ──────► tracks what you're doing across sessions
+     │
+     ▼
+my-grid ─────────► shows multiple things at once (including context state)
+     │
+     ▼
+cc-bash ─────────► structured command execution (future: my-grid zone type)
+```
 
-### Organization & Infrastructure
+---
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [project-conductor](https://github.com/jcaldwell-labs/project-conductor) | Orchestration system for health monitoring and autonomous project advancement | ![Active](https://img.shields.io/badge/status-active-success) |
-| [.github](https://github.com/jcaldwell-labs/.github) | Organization profile and community health files | ![Active](https://img.shields.io/badge/status-active-success) |
+## Supporting Projects
 
-### Legend
+### Visual Effects & Teaching Tools
 
-- ![Active](https://img.shields.io/badge/status-active-success) **Active** - Under active development or maintenance
-- ![Production](https://img.shields.io/badge/status-production-blue) **Production** - Stable and production-ready
-- ![Prototype](https://img.shields.io/badge/status-prototype-yellow) **Prototype** - Experimental, proof-of-concept stage
+| Repository | Description | Purpose |
+|------------|-------------|---------|
+| [atari-style](https://github.com/jcaldwell-labs/atari-style) | Retro shader effects, Lissajous curves, terminal graphics | Visual effects library for terminal apps |
+| [terminal-stars](https://github.com/jcaldwell-labs/terminal-stars) | Starfield visualization with frame buffering | Minimalist shader teaching tool |
+| [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | Interactive canvas with pan/zoom | Canvas mode exploration for my-grid |
 
-## Technology Stack
+### Sample Applications & Games
 
-Projects across the organization use a variety of languages and tools:
+| Repository | Description | Purpose |
+|------------|-------------|---------|
+| [fintrack](https://github.com/jcaldwell-labs/fintrack) | Financial tracking and analysis | Sample app demonstrating jcaldwell-labs patterns |
+| [adventure-engine-v2](https://github.com/jcaldwell-labs/adventure-engine-v2) | Text adventure game engine in C | Teaching tool for terminal game development |
+| [tario](https://github.com/jcaldwell-labs/tario) | ASCII side-scrolling platformer | Game prototype |
 
-- **C** - Low-level systems programming, terminal applications, games
-- **Go** - CLI tools, utilities, performance-critical applications
-- **Python** - Scripting, shader effects, rapid prototyping
-- **Haskell** - Terminal UI applications (my-grid uses Brick)
-- **Shell** - Build scripts, automation, environment setup
+### Meta & Organization
+
+| Repository | Description |
+|------------|-------------|
+| [project-conductor](https://github.com/jcaldwell-labs/project-conductor) | Strategic orchestration and progress tracking ([2026 Vision](https://github.com/jcaldwell-labs/project-conductor/tree/master/docs/planning)) |
+| [capability-catalog](https://github.com/jcaldwell-labs/capability-catalog) | Schema for documenting agent capabilities |
+
+---
+
+## 2026 Direction
+
+**The shift**: From measuring project health by git activity → measuring by "Does anyone use this? Does it help them?"
+
+### Goals
+
+- Ship **my-context** to 10+ external users
+- Consolidate terminal TUI into **my-grid** as unified platform
+- **cc-bash** becomes zone type in my-grid
+- Make tools invisible (auto-trigger, not ceremony)
+
+See [full strategic vision](https://github.com/jcaldwell-labs/project-conductor/tree/master/docs/planning) in project-conductor.
+
+---
+
+## Technology
+
+| Language | Use Case |
+|----------|----------|
+| **Go** | CLI tools (my-context, fintrack) |
+| **Haskell** | Terminal UIs (my-grid uses Brick) |
+| **C** | Low-level terminal apps, games (cc-bash, adventure-engine) |
+| **Python** | Scripting, shader effects |
 
 Common patterns:
-- ANSI escape codes for terminal graphics and control
+- ANSI escape codes for terminal graphics
 - Frame buffering for smooth animations
-- Context-aware tooling and AI integration
-- Cross-platform compatibility (Linux, macOS, BSD)
+- Context-aware tooling
+- Cross-platform (Linux, macOS, WSL)
 
-## Contributing
+---
 
-We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or sharing ideas, your help is appreciated.
+## Getting Involved
 
-### Getting Started
+### Try my-context
 
-1. **Choose a project** - Browse the repositories above and find one that interests you
-2. **Read the docs** - Check the project's README and our [CONTRIBUTING.md](CONTRIBUTING.md) guide
-3. **Start small** - Look for issues tagged `good-first-issue` or `help-wanted`
-4. **Join the discussion** - Ask questions in [Discussions](https://github.com/orgs/jcaldwell-labs/discussions)
+Our most mature tool - track your development sessions:
 
-### Ways to Contribute
+```bash
+go install github.com/jcaldwell-labs/my-context@latest
+my-context start "my-project"
+my-context note "Working on feature X"
+my-context export my-project
+```
 
-- Report bugs - Help us identify and fix issues
-- Suggest features - Share ideas for improvements
-- Improve documentation - Make our docs clearer and more comprehensive
-- Test and provide feedback - Try out prototypes and share your experience
-- Submit code - Fix bugs or implement new features
-- Design and UX - Improve terminal UI/UX patterns
-- Share your use case - Tell us how you're using our tools
+### Contribute
+
+1. **Start with my-context or my-grid** - Our strategic focus
+2. **Look for `good-first-issue`** - Beginner-friendly tasks
+3. **Join [Discussions](https://github.com/orgs/jcaldwell-labs/discussions)** - Share ideas
 
 ### Quick Links
 
-- [Contributing Guidelines](CONTRIBUTING.md) - Development workflow, code standards, testing
-- [Code of Conduct](CODE_OF_CONDUCT.md) - Our commitment to an inclusive community
-- [Security Policy](SECURITY.md) - How to report security vulnerabilities
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policy](SECURITY.md)
 
-### Good First Issues
+---
 
-New to the project? Look for these labels across repositories:
-- `good-first-issue` - Well-defined, beginner-friendly tasks
-- `help-wanted` - Issues where we'd appreciate community help
-- `documentation` - Docs improvements that don't require deep codebase knowledge
+## Philosophy
 
-## Project Organization
+We believe:
 
-### Repository Naming
-
-- **Tools/Libraries**: Descriptive names (`my-context`, `fintrack`, `capability-catalog`)
-- **Games**: Short, memorable names (`tario`, `adventure-engine-v2`)
-- **Prototypes**: Descriptive with `-prototype` suffix or concept names
-
-### Labels & Topics
-
-Repositories use consistent topics for discoverability:
-- `terminal`, `cli`, `tui` - Terminal/command-line applications
-- `game`, `interactive` - Games and interactive experiences
-- `developer-tools`, `productivity` - Development utilities
-- `c`, `go`, `python`, `haskell`, `shell` - Primary language
-- `experimental`, `prototype` - Development stage
-
-### Sprint Organization
-
-Most repositories use sprint labels for issue planning:
-- `sprint-001` through `sprint-004` - Planned work cycles
-- `backlog` - Future work items
-
-## Learn More
-
-### Documentation
-
-- Each repository has detailed README with setup and usage instructions
-- See [CONTRIBUTING.md](CONTRIBUTING.md) for development practices
-- Check individual repos for architecture docs and design decisions
-
-### Community
-
-- [GitHub Discussions](https://github.com/orgs/jcaldwell-labs/discussions) - Questions, ideas, announcements
-- [Issues](https://github.com/jcaldwell-labs) - Bug reports and feature requests (per repository)
-
-### Related Projects & Inspiration
-
-- **Terminal Graphics**: VT100/ANSI escape sequences, ncurses, termbox
-- **Context-Aware Dev**: Claude Code, GitHub Copilot, Cursor
-- **Classic Games**: Atari 2600, ASCII games, roguelikes
-- **Developer Tools**: fzf, ripgrep, tmux, vim
-
-## Contact
-
-- **Organization**: [@jcaldwell-labs](https://github.com/jcaldwell-labs)
-- **Maintainer**: [@jcaldwell1066](https://github.com/jcaldwell1066)
+- Tools should capture context as **byproduct**, not explicit action
+- "Good enough and shipped" beats "perfect and in progress"
+- The terminal is **underutilized** for making work visible
+- Meta-layers should be **invisible**, not ceremonial
 
 ---
 
 <div align="center">
 
-**Built with care by the JCaldwell Labs community**
+**Built for developers who live in terminals**
 
-[Projects](#projects) | [Contributing](#contributing) | [Community](https://github.com/orgs/jcaldwell-labs/discussions)
+[Core Platform](#core-platform) · [2026 Direction](#2026-direction) · [Get Involved](#getting-involved)
+
+**Maintainer**: [@jcaldwell1066](https://github.com/jcaldwell1066)
 
 </div>
