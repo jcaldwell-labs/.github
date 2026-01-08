@@ -1,147 +1,232 @@
 # JCaldwell Labs
 
-> Making knowledge work visible and persistent in terminal environments
+> Experimental developer tools, terminal applications, and context-aware development utilities
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-## Vision
+## Mission
 
-The terminal is where developers live. We build tools that make work **visible** and **persistent** there:
+Building practical tools that enhance developer productivity and explore the intersection of terminal UIs, context-aware development, and AI-assisted workflows. We focus on:
 
-- **Visible**: See multiple streams of information at once, understand context at a glance
-- **Persistent**: Don't lose what you learned, where you were, or why you made decisions
-
-Our tools work *with* the grain of how work actually happens, not requiring ceremony to use.
+- **Terminal-first experiences** - Rich, interactive applications that leverage modern terminal capabilities
+- **Context awareness** - Tools that understand and adapt to development workflows
+- **Developer productivity** - Utilities that streamline common tasks and reduce friction
+- **Experimental prototypes** - Exploring new ideas at the intersection of classic computing and modern AI
 
 ---
 
-## Core Platform
+## Release Train
 
-Our strategic focus - these tools are designed to work together:
+All projects follow a unified release process with automated GitHub releases triggered by version tags.
+
+### Current Releases
+
+| Project | Version | Released | Highlights |
+|---------|---------|----------|------------|
+| [my-context](https://github.com/jcaldwell-labs/my-context) | ![v2.5.0](https://img.shields.io/badge/v2.5.0-blue) | Oct 2025 | Context visibility & watch triggers |
+| [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | ![v1.2.0](https://img.shields.io/badge/v1.2.0-blue) | Jan 2026 | Production-ready terminal library |
+| [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | ![v1.0.0](https://img.shields.io/badge/v1.0.0-blue) | Nov 2025 | First stable release |
+
+### Release Process
+
+```
++-------------+     +-------------+     +-------------+
+|   Develop   |---->|  Tag v*.*   |---->|   Release   |
+|   on main   |     |  or v*-rc*  |     |  Published  |
++-------------+     +-------------+     +-------------+
+                           |
+                    GitHub Actions
+                    builds & publishes
+```
+
+See [RELEASE-PROCESS.md](https://github.com/jcaldwell-labs/project-conductor/blob/main/docs/RELEASE-PROCESS.md) for detailed guidelines.
+
+---
+
+## What's Coming Next
+
+### Now - Active Development
+
+```
++--------------------------------------------------------------------+
+|  IN PROGRESS                                                       |
++--------------------------------------------------------------------+
+|                                                                    |
+|  my-grid           Sprint 005: AI Integration                      |
+|  |-- MCP Server for AI agent integration (Warp, Claude)            |
+|  +-- mygrid-cli command-line canvas tool                           |
+|                                                                    |
+|  boxes-live        Core Features                                   |
+|  |-- Undo/redo functionality                                       |
+|  |-- Connection lines between boxes                                |
+|  +-- Box resizing with mouse                                       |
+|                                                                    |
+|  fintrack          Sprint 001: Bug Fixes                           |
+|  +-- Fix usage documentation tests                                 |
+|                                                                    |
++--------------------------------------------------------------------+
+```
+
+### Next Up - Planned
+
+```
++--------------------------------------------------------------------+
+|  NEXT SPRINT                                                       |
++--------------------------------------------------------------------+
+|                                                                    |
+|  my-grid           Sprint 004: Zone Types                          |
+|  +-- Shader parameter presets - save/load configurations           |
+|                                                                    |
+|  adventure-engine  Sprint 002: DSL Enhancements                    |
+|  |-- Conditional room descriptions                                 |
+|  +-- World creation tutorial                                       |
+|                                                                    |
+|  atari-style       Sprint 001: Educational Content                 |
+|  +-- Enhance visibility and discoverability                        |
+|                                                                    |
+|  my-context        Quality & Features                              |
+|  |-- MCP server implementation                                     |
+|  +-- Increase test coverage                                        |
+|                                                                    |
++--------------------------------------------------------------------+
+```
+
+### Future - Backlog Highlights
+
+```
++--------------------------------------------------------------------+
+|  BACKLOG                                                           |
++--------------------------------------------------------------------+
+|                                                                    |
+|  Cross-Project Integrations                                        |
+|  |-- my-grid <-> boxes-live canvas format import                   |
+|  |-- adventure-engine <-> my-context session tracking              |
+|  +-- terminal-stars -> shared termgfx library extraction           |
+|                                                                    |
+|  Platform Expansion                                                |
+|  |-- terminal-stars WebAssembly browser demo                       |
+|  +-- fintrack database migration system                            |
+|                                                                    |
+|  Advanced Features                                                 |
+|  |-- adventure-engine multiplayer IPC sync                         |
+|  |-- atari-style GLSL shader exploration                           |
+|  +-- my-grid zoom/overview navigation                              |
+|                                                                    |
++--------------------------------------------------------------------+
+```
+
+---
+
+## Projects
+
+### Developer Tools & Utilities
+
+| Repository | Description | Status | Version |
+|------------|-------------|--------|---------|
+| [my-context](https://github.com/jcaldwell-labs/my-context) | Context management and agent journaling for AI-assisted development | ![Active](https://img.shields.io/badge/status-active-success) | v2.5.0 |
+| [fintrack](https://github.com/jcaldwell-labs/fintrack) | Financial tracking and analysis tool | ![Active](https://img.shields.io/badge/status-active-success) | - |
+| [capability-catalog](https://github.com/jcaldwell-labs/capability-catalog) | Capability and skill catalog system | ![Active](https://img.shields.io/badge/status-active-success) | - |
+
+### Terminal Applications
+
+| Repository | Description | Status | Version |
+|------------|-------------|--------|---------|
+| [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | Interactive terminal canvas with pan and zoom - like Miro for the terminal | ![Active](https://img.shields.io/badge/status-active-success) | v1.0.0 |
+| [my-grid](https://github.com/jcaldwell-labs/my-grid) | ASCII canvas editor with zones, shaders, and AI integration | ![Active](https://img.shields.io/badge/status-active-success) | - |
+| [terminal-stars](https://github.com/jcaldwell-labs/terminal-stars) | Starfield visualization with frame buffering and motion effects | ![Active](https://img.shields.io/badge/status-active-success) | - |
+| [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | Claude Code-inspired terminal UI with scrolling, context awareness, status bar | ![Production](https://img.shields.io/badge/status-production-blue) | v1.2.0 |
+
+### Games & Interactive Experiences
+
+| Repository | Description | Status | Version |
+|------------|-------------|--------|---------|
+| [tario](https://github.com/jcaldwell-labs/tario) | ASCII side-scrolling platformer game in C using ANSI escape codes | ![Active](https://img.shields.io/badge/status-active-success) | - |
+| [adventure-engine-v2](https://github.com/jcaldwell-labs/adventure-engine-v2) | Text-based adventure game engine built in C with smart terminal UI | ![Active](https://img.shields.io/badge/status-active-success) | - |
+| [atari-style](https://github.com/jcaldwell-labs/atari-style) | Terminal-based interactive demos inspired by classic Atari aesthetics | ![Prototype](https://img.shields.io/badge/status-prototype-yellow) | - |
+
+### Organization & Infrastructure
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [my-context](https://github.com/jcaldwell-labs/my-context) | Context tracking for development sessions. Answer "what did I do and why?" | ![Production](https://img.shields.io/badge/status-production-blue) |
-| [my-grid](https://github.com/jcaldwell-labs/my-grid) | Terminal workspace with zones (PTY, WATCH, PIPE). See multiple things at once. | ![Active](https://img.shields.io/badge/status-active-success) |
-| [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | cc-bash: Claude Code-style TUI for bash with three-region layout | ![Prototype](https://img.shields.io/badge/status-prototype-yellow) |
+| [project-conductor](https://github.com/jcaldwell-labs/project-conductor) | Release coordination and cross-project orchestration | ![Active](https://img.shields.io/badge/status-active-success) |
+| [.github](https://github.com/jcaldwell-labs/.github) | Organization profile and community health files | ![Active](https://img.shields.io/badge/status-active-success) |
 
-### The Synergy
+### Legend
 
-```
-my-context ──────► tracks what you're doing across sessions
-     │
-     ▼
-my-grid ─────────► shows multiple things at once (including context state)
-     │
-     ▼
-cc-bash ─────────► structured command execution (future: my-grid zone type)
-```
+- ![Active](https://img.shields.io/badge/status-active-success) **Active** - Under active development or maintenance
+- ![Production](https://img.shields.io/badge/status-production-blue) **Production** - Stable and production-ready
+- ![Prototype](https://img.shields.io/badge/status-prototype-yellow) **Prototype** - Experimental, proof-of-concept stage
 
 ---
 
-## Supporting Projects
+## Technology Stack
 
-### Visual Effects & Teaching Tools
+Projects across the organization use a variety of languages and tools:
 
-| Repository | Description | Purpose |
-|------------|-------------|---------|
-| [atari-style](https://github.com/jcaldwell-labs/atari-style) | Retro shader effects, Lissajous curves, terminal graphics | Visual effects library for terminal apps |
-| [terminal-stars](https://github.com/jcaldwell-labs/terminal-stars) | Starfield visualization with frame buffering | Minimalist shader teaching tool |
-| [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | Interactive canvas with pan/zoom | Canvas mode exploration for my-grid |
-
-### Sample Applications & Games
-
-| Repository | Description | Purpose |
-|------------|-------------|---------|
-| [fintrack](https://github.com/jcaldwell-labs/fintrack) | Financial tracking and analysis | Sample app demonstrating jcaldwell-labs patterns |
-| [adventure-engine-v2](https://github.com/jcaldwell-labs/adventure-engine-v2) | Text adventure game engine in C | Teaching tool for terminal game development |
-| [tario](https://github.com/jcaldwell-labs/tario) | ASCII side-scrolling platformer | Game prototype |
-
-### Meta & Organization
-
-| Repository | Description |
-|------------|-------------|
-| [project-conductor](https://github.com/jcaldwell-labs/project-conductor) | Strategic orchestration and progress tracking ([2026 Vision](https://github.com/jcaldwell-labs/project-conductor/tree/master/docs/planning)) |
-| [capability-catalog](https://github.com/jcaldwell-labs/capability-catalog) | Schema for documenting agent capabilities |
-
----
-
-## 2026 Direction
-
-**The shift**: From measuring project health by git activity → measuring by "Does anyone use this? Does it help them?"
-
-### Goals
-
-- Ship **my-context** to 10+ external users
-- Consolidate terminal TUI into **my-grid** as unified platform
-- **cc-bash** becomes zone type in my-grid
-- Make tools invisible (auto-trigger, not ceremony)
-
-See [full strategic vision](https://github.com/jcaldwell-labs/project-conductor/tree/master/docs/planning) in project-conductor.
-
----
-
-## Technology
-
-| Language | Use Case |
-|----------|----------|
-| **Go** | CLI tools (my-context, fintrack) |
-| **Haskell** | Terminal UIs (my-grid uses Brick) |
-| **C** | Low-level terminal apps, games (cc-bash, adventure-engine) |
-| **Python** | Scripting, shader effects |
+| Language | Projects | Specialty |
+|----------|----------|-----------|
+| **C** | smartterm, boxes-live, adventure-engine, terminal-stars, tario | Terminal graphics, games, low-level systems |
+| **Go** | my-context, fintrack | CLI tools, performance-critical utilities |
+| **Python** | my-grid, atari-style, capability-catalog | Rapid prototyping, shaders, data analysis |
 
 Common patterns:
-- ANSI escape codes for terminal graphics
+- ANSI escape codes for terminal graphics and control
 - Frame buffering for smooth animations
-- Context-aware tooling
-- Cross-platform (Linux, macOS, WSL)
+- Context-aware tooling and AI integration
+- Cross-platform compatibility (Linux, macOS, BSD)
 
 ---
 
-## Getting Involved
+## Contributing
 
-### Try my-context
+We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or sharing ideas, your help is appreciated.
 
-Our most mature tool - track your development sessions:
+### Getting Started
 
-```bash
-go install github.com/jcaldwell-labs/my-context@latest
-my-context start "my-project"
-my-context note "Working on feature X"
-my-context export my-project
-```
+1. **Choose a project** - Browse the repositories above and find one that interests you
+2. **Read the docs** - Check the project's README and our [CONTRIBUTING.md](CONTRIBUTING.md) guide
+3. **Start small** - Look for issues tagged `good-first-issue` or `help-wanted`
+4. **Join the discussion** - Ask questions in [Discussions](https://github.com/orgs/jcaldwell-labs/discussions)
 
-### Contribute
+### Good First Issues
 
-1. **Start with my-context or my-grid** - Our strategic focus
-2. **Look for `good-first-issue`** - Beginner-friendly tasks
-3. **Join [Discussions](https://github.com/orgs/jcaldwell-labs/discussions)** - Share ideas
+New to the project? Look for these labels across repositories:
+- `good-first-issue` - Well-defined, beginner-friendly tasks
+- `help-wanted` - Issues where we'd appreciate community help
+- `documentation` - Docs improvements that don't require deep codebase knowledge
 
 ### Quick Links
 
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Security Policy](SECURITY.md)
+- [Release Process](https://github.com/jcaldwell-labs/project-conductor/blob/main/docs/RELEASE-PROCESS.md)
 
 ---
 
-## Philosophy
+## Project Health
 
-We believe:
+| Metric | Status |
+|--------|--------|
+| Active Repositories | 10 |
+| Open Issues | ~155 |
+| Languages | C, Go, Python, Shell |
+| CI Coverage | 7/10 projects |
+| Release Automation | All projects |
 
-- Tools should capture context as **byproduct**, not explicit action
-- "Good enough and shipped" beats "perfect and in progress"
-- The terminal is **underutilized** for making work visible
-- Meta-layers should be **invisible**, not ceremonial
+---
+
+## Contact
+
+- **Organization**: [@jcaldwell-labs](https://github.com/jcaldwell-labs)
+- **Maintainer**: [@jcaldwell1066](https://github.com/jcaldwell1066)
 
 ---
 
 <div align="center">
 
-**Built for developers who live in terminals**
+**Built with love by the JCaldwell Labs community**
 
-[Core Platform](#core-platform) · [2026 Direction](#2026-direction) · [Get Involved](#getting-involved)
-
-**Maintainer**: [@jcaldwell1066](https://github.com/jcaldwell1066)
+[Projects](#projects) | [Roadmap](#whats-coming-next) | [Contributing](#contributing) | [Releases](#release-train)
 
 </div>
