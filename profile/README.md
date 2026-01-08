@@ -23,7 +23,7 @@ All projects follow a unified release process with automated GitHub releases tri
 
 | Project | Version | Released | Highlights |
 |---------|---------|----------|------------|
-| [my-context](https://github.com/jcaldwell-labs/my-context) | ![v2.5.0](https://img.shields.io/badge/v2.5.0-blue) | Oct 2025 | Context visibility & watch triggers |
+| [my-context](https://github.com/jcaldwell-labs/my-context) | ![v3.1.0](https://img.shields.io/badge/v3.1.0-blue) | Jan 2026 | Context tags, hierarchy & cross-platform sync |
 | [smartterm-prototype](https://github.com/jcaldwell-labs/smartterm-prototype) | ![v1.2.0](https://img.shields.io/badge/v1.2.0-blue) | Jan 2026 | Production-ready terminal library |
 | [boxes-live](https://github.com/jcaldwell-labs/boxes-live) | ![v1.0.0](https://img.shields.io/badge/v1.0.0-blue) | Nov 2025 | First stable release |
 
@@ -123,7 +123,7 @@ See [RELEASE-PROCESS.md](https://github.com/jcaldwell-labs/project-conductor/blo
 
 | Repository | Description | Status | Version |
 |------------|-------------|--------|---------|
-| [my-context](https://github.com/jcaldwell-labs/my-context) | Context management and agent journaling for AI-assisted development | ![Active](https://img.shields.io/badge/status-active-success) | v2.5.0 |
+| [my-context](https://github.com/jcaldwell-labs/my-context) | Context management and agent journaling for AI-assisted development | ![Active](https://img.shields.io/badge/status-active-success) | v3.1.0 |
 | [fintrack](https://github.com/jcaldwell-labs/fintrack) | Financial tracking and analysis tool | ![Active](https://img.shields.io/badge/status-active-success) | - |
 | [capability-catalog](https://github.com/jcaldwell-labs/capability-catalog) | Capability and skill catalog system | ![Active](https://img.shields.io/badge/status-active-success) | - |
 
